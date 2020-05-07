@@ -11,7 +11,7 @@ function formatNumber(num) {
 }
 
 function getTotalDownload() {
-    $.get("https://api.github.com/repos/thephucit/Tunlookup/releases", function(data, status) {
+    $.get("https://api.github.com/repos/thephucit/tunlookup/releases", function(data, status) {
         var total = 0;
         data.forEach( function(item) {
             item.assets.forEach( function(child) {
